@@ -6,7 +6,7 @@ public class MyMain {
 		Canvas canvas = new Canvas();
 		canvas.requestFocus();
 		
-		//TASK 2:  ADD A USER GAME OBJECT
+		//TASK 2:  ADD USER GAME OBJECTS
 		Type_D_GameObject userD = new Type_D_GameObject(200, 200);
 		userD.setVelocity(10);
 		canvas.addKeyListener(userD);
@@ -21,6 +21,14 @@ public class MyMain {
 		userC.setVelocity(10);
 		canvas.addKeyListener(userC);
 		canvas.addGameObject(userC);
+		
+		//TASK 3: CREATE GAME OBJECT B THAT IMPLEMENTED AN ADAPTER
+		Type_B_GameObject userB = new Type_B_GameObject(300, 300);
+		userB.setVelocity(10);
+		canvas.addKeyListener(userB);
+		canvas.addGameObject(userB);
+		
+		
 
 	}
 	

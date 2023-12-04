@@ -26,7 +26,7 @@ public class Type_A_GameObject extends GameObject implements KeyListener {
     int  canvasHeight = (int)c.getSize().getHeight();
     int  canvasWidth  = (int)c.getSize().getWidth();
     
-    //MOVE BLUE GAME OBJECT
+    //MOVE YELLOW GAME OBJECT
     switch (getDirection()) {
       case Direction.UP:
         setY(getY() - getVelocity());

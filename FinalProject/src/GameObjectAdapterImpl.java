@@ -1,4 +1,3 @@
-
-public class GameObjectAdapterImpl {
+public class GameObjectAdapterImpl implements GameObjectAdapter {
 
 }

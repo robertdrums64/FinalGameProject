@@ -1,7 +1,3 @@
-public abstract class GameObjectAdapter extends GameObject {
+public interface GameObjectAdapter {
 
-	public GameObjectAdapter(int x, int y) {
-		super(x, y);
-
-	}
 }
