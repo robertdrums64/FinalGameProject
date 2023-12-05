@@ -81,10 +81,20 @@ public class Canvas extends JComponent implements ActionListener, KeyListener {
 	  }
 
 	  public void keyPressed(KeyEvent e) {
+	    if (e.getKeyCode() == KeyEvent.VK_TAB) {
+	    System.out.println("TAB IS PRESSED!");
+	      highlighted = highlighted + 1;
+	      if (highlighted == gameObjectList.size()) {
+	        highlighted = 0;			
+	      }
+	    }
+	    GameObject s = gameObjectList.get(highlighted);
+	    s.setVelocity(s.getVelocity()+1);
 	  }
 
 	  public void keyReleased(KeyEvent e) {
 	    if (e.getKeyCode() == KeyEvent.VK_TAB) {
+	    System.out.println("TAB IS PRESSED!");
 	      highlighted = highlighted + 1;
 	      if (highlighted == gameObjectList.size()) {
 	        highlighted = 0;
